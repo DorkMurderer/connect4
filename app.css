@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("https://png.pngtree.com/background/20210716/original/pngtree-carrot-strawberry-and-colorful-flag-cartoon-background-picture-image_1350100.jpg")  no-repeat center center fixed;;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: rgb(149, 111, 118);
+    border: 10px solid #ffffff;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+
+    margin: 5px;
+
+    background-color: rgb(255, 202, 211);
+    border-radius: 50%;
+    border: 5px solid rgb(147, 248, 147);
+}
+
+
+.red-piece{
+    background-color: red;
+}
+
+
+.yellow-piece{
+    background-color: orange;
+}
+
+@media  screen and (max-width: 450px) {
+    #board{
+        padding-right: 25px;
+        height: 450px;
+        width: 530px;
+        margin-right: 200px;
+        margin-top: 120px;
+      
+    }
+
+    h1{
+        text-align: center;
+        margin-left: 200px;
+        text-wrap: nowrap;
+    }
+
+    p{
+        margin-left: 120px;
+        font-size: 25px;
+        text-wrap: nowrap;
+        font-weight: bolder;
+    }
+
+    .tile{
+        height: 55px;
+        width: 55px;
+    }
+
+    #winner{
+        margin-left: 200px;
+    }
+
+    
+}
